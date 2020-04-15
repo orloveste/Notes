@@ -2,6 +2,11 @@ package Integer_Types;
 
 public class Arithmetic_int {
     public static void main(String[] args) {
+        // improve the readability of your code
+        int million = 1_000_000;
+        System.out.println("Print "+ million+" can be different inCode=>  1_000_000");
+
+
         int two = 2;
         int ten = 10;
         System.out.println("first int "+two+ " second int "+ten);
