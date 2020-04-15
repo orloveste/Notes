@@ -2,6 +2,14 @@ package Integer_Types;
 
 public class Arithmetic_int {
     public static void main(String[] args) {
+        // arithmetic operations work with the long type as well
+        long one = 1L;
+        long twentyTwo = 22L; // L or l is a literal for longs
+        long bigNumber = 100_000_000_000L;
+
+        long result = bigNumber + twentyTwo - one;
+        System.out.println(result); // 100000000021
+
         // improve the readability of your code
         int million = 1_000_000;
         System.out.println("Print "+ million+" can be different inCode=>  1_000_000");
