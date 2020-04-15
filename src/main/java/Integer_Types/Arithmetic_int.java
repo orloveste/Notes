@@ -2,6 +2,11 @@ package Integer_Types;
 
 public class Arithmetic_int {
     public static void main(String[] args) {
+        // other possible forms *=, /=, %= and some others
+        int n = 10;
+        n += 4; // 14
+        System.out.println(n);
+
         // arithmetic operations work with the long type as well
         long one = 1L;
         long twentyTwo = 22L; // L or l is a literal for longs
