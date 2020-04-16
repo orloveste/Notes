@@ -16,5 +16,16 @@ public class Snail {
         int A = reader.nextInt();
         System.out.print("Enter 'B' (minim one): ");
         int B = reader.nextInt();
+
+        int days = 1;
+        int result = A; // need result to compare with H
+        //for (days = 1; days < H; days++) { // count days
+            do {
+                int resultIntermediate = A - B; // night
+                days++;
+                result = resultIntermediate + result; // day add
+            } while (!(result >= H));
+        //}
+        System.out.println(days);
     }
 }
