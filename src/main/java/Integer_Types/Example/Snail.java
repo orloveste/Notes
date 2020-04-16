@@ -13,16 +13,16 @@ public class Snail {
         System.out.print("\nEnter 'H' (2 < H >= 100): ");
         int hight = reader.nextInt();
         System.out.print("Enter 'A' (H > A > B): ");
-        int dayMove = reader.nextInt();
+        int dayMoveA = reader.nextInt();
         System.out.print("Enter 'B' (minim one): ");
-        int nightNegativeMove = reader.nextInt();
+        int nightNegativeMoveB = reader.nextInt();
 
         int days = 1;
-        int result = dayMove; // need result to compare with H
-        if ((dayMove > nightNegativeMove) && (hight > dayMove)) {
+        int result = dayMoveA; // need result to compare with H
+        if ((dayMoveA > nightNegativeMoveB) && (hight > dayMoveA)) {
             // todo = 2 code style errors on https://hyperskill.org/learn/step/2221
             do {
-                int resultIntermediate = dayMove - nightNegativeMove; // night
+                int resultIntermediate = dayMoveA - nightNegativeMoveB; // night
                 days++;
                 result = resultIntermediate + result; // day add
             } while (result < hight);
