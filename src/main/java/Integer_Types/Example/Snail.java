@@ -11,21 +11,22 @@ public class Snail {
                 "\n- In which day the snail will reach the top of the pole?");
 
         System.out.print("\nEnter 'H' (2 < H >= 100): ");
-        int H = reader.nextInt();
+        int hight = reader.nextInt();
         System.out.print("Enter 'A' (H > A > B): ");
-        int A = reader.nextInt();
+        int dayMove = reader.nextInt();
         System.out.print("Enter 'B' (minim one): ");
-        int B = reader.nextInt();
+        int nightNegativeMove = reader.nextInt();
 
         int days = 1;
-        int result = A; // need result to compare with H
-        //for (days = 1; days < H; days++) { // count days
+        int result = dayMove; // need result to compare with H
+        if ((dayMove > nightNegativeMove) && (hight > dayMove)) {
+            // todo = 2 code style errors on https://hyperskill.org/learn/step/2221
             do {
-                int resultIntermediate = A - B; // night
+                int resultIntermediate = dayMove - nightNegativeMove; // night
                 days++;
                 result = resultIntermediate + result; // day add
-            } while (!(result >= H));
-        //}
-        System.out.println(days);
+            } while (result < hight);
+            System.out.println(days);
+        }
     }
 }
