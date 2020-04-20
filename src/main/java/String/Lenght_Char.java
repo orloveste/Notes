@@ -2,14 +2,27 @@ package String;
 
 public class Lenght_Char {
     public static void main(String[] args) {
+        // compare
+        String first = "first";
+        String second = "second";
+
+        String anotherFirst = "first";
+        String secondInUpperCase = "SECOND";
+
+        System.out.println(first.equals(second)); // false, the strings have different values
+        System.out.println(first.equals(anotherFirst)); // true, the strings have the same value
+
+        System.out.println(second.equals(secondInUpperCase)); // false, the strings have different cases
+        System.out.println(second.equalsIgnoreCase(secondInUpperCase)); // true, it ignores cases
+
         //appending values -  left to right
-        String shortString = "str";
+        /*String shortString = "str";
         long number = 100;
 
         String result1 = shortString + number + 50; // the result is "str10050"
         System.out.println(result1);
         String result2 = number + 50 + shortString; // what is the result2?
-        System.out.println("result 2 = 150str : "+result2);
+        System.out.println("result 2 = 150str : "+result2);*/
 
         /*String firstName = "John";
         String lastName = "Smith";
