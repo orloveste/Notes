@@ -2,15 +2,26 @@ package String;
 
 public class Lenght_Char {
     public static void main(String[] args) {
+        String firstName = "John";
+        String lastName = "Smith";
+
+// concatenation using the "+" operator
+        String fullName1 = firstName + " " + lastName; // "John Smith"
+        System.out.println(fullName1);
+
+// concatenation using the concat method
+        String fullName2 = firstName.concat(" ").concat(lastName); // "John Smith"
+        System.out.println(fullName2);
+
         //Exceptions
-//        String s = null;
+/*//        String s = null;
 //        int length = s.length(); // it throws NullPointerException
 //        System.out.println(length);
 
         String s1 = "ab";
         char c = s1.charAt(2);
         // it throws StringIndexOutOfBoundsException because indexing starts with 0
-        System.out.println(c);
+        System.out.println(c);*/
 
         /*// methods of strings
         String text = "The simple text string";
