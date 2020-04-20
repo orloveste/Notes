@@ -2,7 +2,16 @@ package String;
 
 public class Lenght_Char {
     public static void main(String[] args) {
-        String firstName = "John";
+        //appending values -  left to right
+        String shortString = "str";
+        long number = 100;
+
+        String result1 = shortString + number + 50; // the result is "str10050"
+        System.out.println(result1);
+        String result2 = number + 50 + shortString; // what is the result2?
+        System.out.println("result 2 = 150str : "+result2);
+
+        /*String firstName = "John";
         String lastName = "Smith";
 
 // concatenation using the "+" operator
@@ -11,7 +20,7 @@ public class Lenght_Char {
 
 // concatenation using the concat method
         String fullName2 = firstName.concat(" ").concat(lastName); // "John Smith"
-        System.out.println(fullName2);
+        System.out.println(fullName2);*/
 
         //Exceptions
 /*//        String s = null;
