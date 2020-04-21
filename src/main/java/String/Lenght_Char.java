@@ -3,11 +3,14 @@ package String;
 public class Lenght_Char {
     public static void main(String[] args) {
 
+        // how many characters contain string?
+        String s = "All robots speak Java";
+        System.out.println(s.length()); // 21
         //example - replace and substring
-        String str = "a simple string";
+        /*String str = "a simple string";
 
         str = str.replace("a", "A SIMPLE").substring(2, 8);
-        System.out.println(str);  // SIMPLE
+        System.out.println(str);  // SIMPLE*/
 
         /*String str = "mamachao";
         System.out.println(str.charAt(3));
