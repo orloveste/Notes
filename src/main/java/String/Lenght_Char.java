@@ -2,10 +2,16 @@ package String;
 
 public class Lenght_Char {
     public static void main(String[] args) {
+        // if first in print is string - next will be taken like string concatenate
+        System.out.println(1 + 1 + "2" + 2); // 1
+        System.out.println(2 + 2 + "2"); // 2
+        System.out.println("2" + 2 + 2); // 3
+        System.out.println("2" + 2 + 1 + 1); // 4
 
         // how many characters contain string?
-        String s = "All robots speak Java";
-        System.out.println(s.length()); // 21
+        /*String s = "All robots speak Java";
+        System.out.println(s.length()); // 21*/
+
         //example - replace and substring
         /*String str = "a simple string";
 
