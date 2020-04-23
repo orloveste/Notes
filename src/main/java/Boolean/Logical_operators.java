@@ -2,15 +2,25 @@ package Boolean;
 
 public class Logical_operators {
     public static void main(String[] args) {
+//        Logical operators - XOR (exclusive OR)
+        boolean b1 = false ^ false; // false
+        System.out.println(b1);
+        boolean b2 = false ^ true;  // true
+        System.out.println(b2);
+        boolean b3 = true ^ false;  // true
+        System.out.println(b3);
+        boolean b4 = true ^ true;   // false
+        System.out.println(b4);
+
 //        Logical operators - OR
-        boolean b1 = false || false; // false
+        /*boolean b1 = false || false; // false
         System.out.println(b1);
         boolean b2 = false || true;  // true
         System.out.println(b2);
         boolean b3 = true || false;  // true
         System.out.println(b3);
         boolean b4 = true || true;   // true
-        System.out.println(b4);
+        System.out.println(b4);*/
 
 //        Logical operators - AND
         /*boolean b1 = false && false; // false
