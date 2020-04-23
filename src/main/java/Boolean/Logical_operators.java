@@ -2,9 +2,17 @@ package Boolean;
 
 public class Logical_operators {
     public static void main(String[] args) {
+//      Logical operators - example: trekking
+        boolean cold = false;
+        boolean dry = true;
+        boolean summer = false; // suppose now is autumn
+
+        boolean trekking = (dry && !cold) || summer; // true, let's go to trek!
+
+
 //      Order Logical operators  ! (NOT) -> ^ (XOR) -> && (AND) -> || (OR)
-        boolean b = true && !false; // true, because !false is evaluated first
-        System.out.println(b);
+        /*boolean b = true && !false; // true, because !false is evaluated first
+        System.out.println(b);*/
 
 //        Logical operators - XOR (exclusive OR)
         /*boolean b1 = false ^ false; // false
