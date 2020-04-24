@@ -2,8 +2,33 @@ package String;
 
 public class Lenght_Char {
     public static void main(String[] args) {
+        // concatenate  affected by last lowerCase
+        String str = "Jav";
+        str = (str + str.charAt(1)).toLowerCase();
+        System.out.println(str);
+
+        // if first in print is string - next will be taken like string concatenate
+        /*System.out.println(1 + 1 + "2" + 2); // 1
+        System.out.println(2 + 2 + "2"); // 2
+        System.out.println("2" + 2 + 2); // 3
+        System.out.println("2" + 2 + 1 + 1); // 4*/
+
+        // how many characters contain string?
+        /*String s = "All robots speak Java";
+        System.out.println(s.length()); // 21*/
+
+        //example - replace and substring
+        /*String str = "a simple string";
+
+        str = str.replace("a", "A SIMPLE").substring(2, 8);
+        System.out.println(str);  // SIMPLE*/
+
+        /*String str = "mamachao";
+        System.out.println(str.charAt(3));
+        System.out.println(str.substring(0,5));*/
+
         // compare
-        String first = "first";
+        /*String first = "first";
         String second = "second";
 
         String anotherFirst = "first";
@@ -13,7 +38,7 @@ public class Lenght_Char {
         System.out.println(first.equals(anotherFirst)); // true, the strings have the same value
 
         System.out.println(second.equals(secondInUpperCase)); // false, the strings have different cases
-        System.out.println(second.equalsIgnoreCase(secondInUpperCase)); // true, it ignores cases
+        System.out.println(second.equalsIgnoreCase(secondInUpperCase)); // true, it ignores cases*/
 
         //appending values -  left to right
         /*String shortString = "str";
