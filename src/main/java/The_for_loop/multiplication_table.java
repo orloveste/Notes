@@ -9,6 +9,6 @@ public class multiplication_table {
                 System.out.print(i * j + "\t");
             }
             System.out.println();
-        }
+        }//bad test commit
     }
 }
