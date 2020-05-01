@@ -14,10 +14,10 @@ public class Average_sumsOfDivisor {
             min++;
         }
         variabila = min + variabila;
-        for (;variabila <= max; count++){
+        for ( ; variabila <= max; count++) {
             suma = suma + variabila;
             variabila = variabila + 3;
         }
-        System.out.println(suma/count);
+        System.out.println(suma / count);
     }
 }
