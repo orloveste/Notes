@@ -18,15 +18,9 @@ public class Snail {
         int nightNegativeMoveB = reader.nextInt();
 
         int days = 1;
-        int result = dayMoveA; // need result to compare with H
-        if ((dayMoveA > nightNegativeMoveB) && (hight > dayMoveA)) {
-            // todo = 2 code style errors on https://hyperskill.org/learn/step/2221
-            do {
-                int resultIntermediate = dayMoveA - nightNegativeMoveB; // night
-                days++;
-                result = resultIntermediate + result; // day add
-            } while (result < hight);
-            System.out.println(days);
+        for (int i = dayMoveA; i < hight; i += dayMoveA - nightNegativeMoveB) {
+            days++;
         }
+        System.out.println(days);
     }
 }
