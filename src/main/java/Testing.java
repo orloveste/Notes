@@ -1,7 +1,9 @@
 public class Testing {
     public static void main(String[] args) {
-        float f = (float) (20d + 20.02f); //float f = 20d + 20.02f;
-        long n = 10 + 2L;
-        byte b = (byte) (n + 5); //byte b = n + 5;
+        long lo = Integer.MAX_VALUE;
+        int i = (int) lo; //int i = lo;
+        char ch = (char) i; //char ch = i;
+        double d = ch;
+        float f = (float) d; //float f = d;
     }
 }
