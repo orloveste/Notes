@@ -1,8 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
+package Whil_and_DoWhile;
+
 import java.util.Scanner;
 
-public class Testing {
+public class double_condition_break {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         int readNumber;
