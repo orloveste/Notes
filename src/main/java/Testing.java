@@ -4,21 +4,13 @@ import java.util.Scanner;
 
 public class Testing {
     public static void main(String[] args) {
-        Scanner reader = new Scanner(System.in);
-        int readNumber;
-        int sum = 0;
-        int target = 1000;
-
-        do {
-            readNumber = reader.nextInt();
-            sum += readNumber;
-            if (readNumber == 0 ) {
-                System.out.println(sum);
-                break;
-            } else if ( sum >= target ) {
-                System.out.println(sum - target);
-                break;
-            }
-        } while (true);
+        boolean b1 = false;
+        boolean b2 = false;
+        boolean b3 = false;
+        boolean result = (b1 && b2) ? b1 : (b2 || b3) ? b2 : b3;
+        System.out.println(result);
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(b3);
     }
 }
