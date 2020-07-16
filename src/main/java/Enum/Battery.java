@@ -4,8 +4,9 @@ import java.net.CacheRequest;
 
 public class Battery {
     public static void main(String[] args) {
-        System.out.println(ChargeLevel.LOW.sections); // 1
-        System.out.println(ChargeLevel.LOW.color); // red
+        System.out.println(ChargeLevel.findByColor("yellow")); // MEDIUM
+        /*System.out.println(ChargeLevel.LOW.sections); // 1
+        System.out.println(ChargeLevel.LOW.color); // red*/
     }
     public enum ChargeLevel {
 
@@ -28,6 +29,14 @@ public class Battery {
 
         public String getColor() {
             return color;
+        }
+        public static ChargeLevel findByColor(String color) {
+            for (ChargeLevel value: values()) {
+                if (color.equals(value.color)) {
+                    return value;
+                }
+            }
+            return null;
         }
     }
 }
